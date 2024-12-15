@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [1917-maximum-average-pass-ratio](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/1917-maximum-average-pass-ratio) |
 | [2232-adding-spaces-to-a-string](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2232-adding-spaces-to-a-string) |
 | [3427-special-array-ii](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/3427-special-array-ii) |
 ## Two Pointers
@@ -26,4 +27,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3427-special-array-ii](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/3427-special-array-ii) |
+## Greedy
+|  |
+| ------- |
+| [1917-maximum-average-pass-ratio](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/1917-maximum-average-pass-ratio) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [1917-maximum-average-pass-ratio](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/1917-maximum-average-pass-ratio) |
 <!---LeetCode Topics End-->
