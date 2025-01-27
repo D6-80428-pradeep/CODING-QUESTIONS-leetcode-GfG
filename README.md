@@ -35,4 +35,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1917-maximum-average-pass-ratio](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/1917-maximum-average-pass-ratio) |
+## Depth-First Search
+|  |
+| ------- |
+| [1558-course-schedule-iv](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/1558-course-schedule-iv) |
+## Breadth-First Search
+|  |
+| ------- |
+| [1558-course-schedule-iv](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/1558-course-schedule-iv) |
+## Graph
+|  |
+| ------- |
+| [1558-course-schedule-iv](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/1558-course-schedule-iv) |
+## Topological Sort
+|  |
+| ------- |
+| [1558-course-schedule-iv](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/1558-course-schedule-iv) |
 <!---LeetCode Topics End-->
