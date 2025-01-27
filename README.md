@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2232-adding-spaces-to-a-string](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2232-adding-spaces-to-a-string) |
+| [2340-total-appeal-of-a-string](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2340-total-appeal-of-a-string) |
 ## Simulation
 |  |
 | ------- |
@@ -54,4 +55,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1558-course-schedule-iv](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/1558-course-schedule-iv) |
 | [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
+## Hash Table
+|  |
+| ------- |
+| [2340-total-appeal-of-a-string](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2340-total-appeal-of-a-string) |
+## Dynamic Programming
+|  |
+| ------- |
+| [2340-total-appeal-of-a-string](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2340-total-appeal-of-a-string) |
 <!---LeetCode Topics End-->
