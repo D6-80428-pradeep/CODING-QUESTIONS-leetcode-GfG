@@ -1,77 +1,44 @@
 class Solution {
-    class UnionFind {
-        int[] parent;
-        int[] size;
-        int[] fish;
-        
-        UnionFind(int n) {
-            parent = new int[n];
-            size = new int[n];
-            fish = new int[n];
-            for(int i = 0; i < n; i++) {
-                parent[i] = i;
-                size[i] = 1;
-            }
-        }
-        
-        int find(int x) {
-            if(parent[x] != x) {
-                parent[x] = find(parent[x]);
-            }
-            return parent[x];
-        }
-        
-        void union(int x, int y) {
-            int px = find(x);
-            int py = find(y);
-            if(px != py) {
-                if(size[px] < size[py]) {
-                    int temp = px;
-                    px = py;
-                    py = temp;
-                }
-                parent[py] = px;
-                size[px] += size[py];
-                fish[px] += fish[py];
-            }
-        }
-    }
-    
     public int findMaxFish(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
-        UnionFind uf = new UnionFind(m * n);
-        
-        // Initialize fish counts
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
-                if(grid[i][j] > 0) {
-                    uf.fish[i * n + j] = grid[i][j];
-                }
-            }
-        }
-        
-        // Unite adjacent water cells
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
-                if(grid[i][j] > 0) {
-                    if(i + 1 < m && grid[i + 1][j] > 0) {
-                        uf.union(i * n + j, (i + 1) * n + j);
-                    }
-                    if(j + 1 < n && grid[i][j + 1] > 0) {
-                        uf.union(i * n + j, i * n + j + 1);
-                    }
-                }
-            }
-        }
-        
-        // Find maximum fish in any component
         int maxFish = 0;
-        for(int i = 0; i < m * n; i++) {
-            if(uf.find(i) == i) {
-                maxFish = Math.max(maxFish, uf.fish[i]);
+
+        // Iterate through each cell in the grid
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                // If the cell is a water cell, perform DFS to find the total fish in the connected region
+                if (grid[i][j] > 0) {
+                    int currentFish = dfs(grid, i, j);
+                    maxFish = Math.max(maxFish, currentFish);
+                }
             }
         }
+
         return maxFish;
+    }
+
+    // DFS function to explore all reachable water cells and sum the fish
+    private int dfs(int[][] grid, int i, int j) {
+        int m = grid.length;
+        int n = grid[0].length;
+
+        // Check if the current cell is out of bounds or not a water cell
+        if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == 0) {
+            return 0;
+        }
+
+        // Collect the fish in the current cell
+        int fish = grid[i][j];
+        // Mark the cell as visited by setting it to 0
+        grid[i][j] = 0;
+
+        // Explore all four adjacent cells
+        fish += dfs(grid, i + 1, j);
+        fish += dfs(grid, i - 1, j);
+        fish += dfs(grid, i, j + 1);
+        fish += dfs(grid, i, j - 1);
+
+        return fish;
     }
 }
