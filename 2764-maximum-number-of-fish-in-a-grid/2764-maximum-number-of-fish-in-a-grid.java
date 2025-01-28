@@ -1,36 +1,75 @@
 class Solution {
+    class UnionFind {
+        int[] parent;
+        int[] size;
+        int[] fish;
+        
+        UnionFind(int n) {
+            parent = new int[n];
+            size = new int[n];
+            fish = new int[n];
+            for(int i = 0; i < n; i++) {
+                parent[i] = i;
+                size[i] = 1;
+            }
+        }
+        
+        int find(int x) {
+            if(parent[x] != x) {
+                parent[x] = find(parent[x]);
+            }
+            return parent[x];
+        }
+        
+        void union(int x, int y) {
+            int px = find(x);
+            int py = find(y);
+            if(px != py) {
+                if(size[px] < size[py]) {
+                    int temp = px;
+                    px = py;
+                    py = temp;
+                }
+                parent[py] = px;
+                size[px] += size[py];
+                fish[px] += fish[py];
+            }
+        }
+    }
+    
     public int findMaxFish(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
-        int maxFish = 0;
-        boolean[][] visited = new boolean[m][n];
-        int[][] dirs = {{1,0}, {-1,0}, {0,1}, {0,-1}};
-        Queue<int[]> queue = new LinkedList<>();
+        UnionFind uf = new UnionFind(m * n);
         
+        // Initialize fish counts
         for(int i = 0; i < m; i++) {
             for(int j = 0; j < n; j++) {
-                if(grid[i][j] > 0 && !visited[i][j]) {
-                    int currentFish = 0;
-                    queue.offer(new int[]{i, j});
-                    visited[i][j] = true;
-                    
-                    while(!queue.isEmpty()) {
-                        int[] curr = queue.poll();
-                        currentFish += grid[curr[0]][curr[1]];
-                        
-                        for(int[] dir : dirs) {
-                            int newI = curr[0] + dir[0];
-                            int newJ = curr[1] + dir[1];
-                            
-                            if(newI >= 0 && newI < m && newJ >= 0 && newJ < n 
-                               && !visited[newI][newJ] && grid[newI][newJ] > 0) {
-                                queue.offer(new int[]{newI, newJ});
-                                visited[newI][newJ] = true;
-                            }
-                        }
-                    }
-                    maxFish = Math.max(maxFish, currentFish);
+                if(grid[i][j] > 0) {
+                    uf.fish[i * n + j] = grid[i][j];
                 }
+            }
+        }
+        
+        // Unite adjacent water cells
+        for(int i = 0; i < m; i++) {
+            for(int j = 0; j < n; j++) {
+                if(grid[i][j] > 0) {
+                    if(i + 1 < m && grid[i + 1][j] > 0) {
+                        uf.union(i * n + j, (i + 1) * n + j);
+                    }
+                    if(j + 1 < n && grid[i][j + 1] > 0) {
+                        uf.union(i * n + j, i * n + j + 1);
+                    }
+                }
+            }
+        }
+        
+        // Find maximum fish in any component
+        int maxFish = 0;
+        for(int i = 0; i < m * n; i++) {
+            if(uf.find(i) == i) {
+                maxFish = Math.max(maxFish, uf.fish[i]);
             }
         }
         return maxFish;
