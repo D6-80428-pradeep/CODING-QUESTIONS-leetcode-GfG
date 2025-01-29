@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/0088-merge-sorted-array) |
 | [1917-maximum-average-pass-ratio](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/1917-maximum-average-pass-ratio) |
 | [2232-adding-spaces-to-a-string](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2232-adding-spaces-to-a-string) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2764-maximum-number-of-fish-in-a-grid) |
@@ -11,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/0088-merge-sorted-array) |
 | [2232-adding-spaces-to-a-string](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2232-adding-spaces-to-a-string) |
 ## String
 |  |
@@ -74,4 +76,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2764-maximum-number-of-fish-in-a-grid) |
+## Sorting
+|  |
+| ------- |
+| [0088-merge-sorted-array](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/0088-merge-sorted-array) |
 <!---LeetCode Topics End-->
