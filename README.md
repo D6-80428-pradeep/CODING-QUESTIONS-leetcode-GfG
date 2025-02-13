@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1917-maximum-average-pass-ratio](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/1917-maximum-average-pass-ratio) |
 | [2232-adding-spaces-to-a-string](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2232-adding-spaces-to-a-string) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2764-maximum-number-of-fish-in-a-grid) |
+| [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3427-special-array-ii](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/3427-special-array-ii) |
 ## Two Pointers
 |  |
@@ -23,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2232-adding-spaces-to-a-string](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/2232-adding-spaces-to-a-string) |
+| [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 ## Binary Search
 |  |
 | ------- |
@@ -39,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1917-maximum-average-pass-ratio](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/1917-maximum-average-pass-ratio) |
+| [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/D6-80428-pradeep/CODING-QUESTIONS-leetcode-GfG/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 ## Depth-First Search
 |  |
 | ------- |
